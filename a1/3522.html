@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3522</title>
+    <style>
+        td {
+            font-size: 10pt;
+        }
+    </style>
+</head>
+<body>
+<h1>
+    한국디지털미디어고등학교를
+    <ruby>
+        紹介
+        <rp>(</rp>
+        <rt>소개</rt>
+        <rp>)</rp>
+    </ruby>
+    소개합니다.
+</h1>
+<hr>
+
+<h2>학교전경</h2>
+<p>
+    <img src="./q1/all_around.png" usemap="#school"/>
+    <map name="school">
+        <area shape="rect" coords="0, 0, 200, 300" title="hakbong" href="./q1/hakbong.jpg" target="_blank"/>
+        <area shape="rect" coords="300, 0, 900,300" title="building" href="./q1/main_building.jpg" target="_blank"/>
+    </map>
+</p>
+<hr>
+
+<h2>전공</h2>
+<ul type="square">
+    <li>e비즈니스과</li>
+    <li>디지털콘텐츠과</li>
+    <li>웹프로그래밍과</li>
+    <li>해킹방어과</li>
+    <li>학교홍보영상</li>
+</ul>
+<hr>
+
+<h2>학교홍보영상</h2>
+<video width="640" height="264" controls autoplay poster="http://video-js.zencoder.com/oceans-clip.png">
+    <!-- 사파리, 크롬, IE, 아이폰, 안드로이드, 윈도폰 -->
+    <source src="http://61.108.29.25/2016pr.mp4"
+            type="video/mp4"/> <!-- 파이어폭스, 오페라 -->
+    <source src="http://video-js.zencoder.com/oceans-clip.webm" type="video/webm"/>
+</video>
+영상주소: http://61.108.29.25/2016pr.mp4
+<hr>
+
+<h2>학생현황</h2>
+<table border="1">
+    <tr bgcolor="yellow">
+        <td rowspan="2">학과/학년</td>
+        <td colspan="2">1학년</td>
+        <td colspan="2">2학년</td>
+        <td colspan="2">3학년</td>
+        <td colspan="2">합계</td>
+    </tr>
+    <tr bgcolor="yellow">
+        <td>1학년</td>
+        <td>2학년</td>
+        <td>3학년</td>
+        <td>합계</td>
+        <td>1학년</td>
+        <td>2학년</td>
+        <td>3학년</td>
+        <td>합계</td>
+    </tr>
+    <tr>
+        <td>1학년</td>
+        <td>2학년</td>
+        <td>3학년</td>
+        <td>합계</td>
+        <td>1학년</td>
+        <td>2학년</td>
+        <td>3학년</td>
+        <td>합계</td>
+        <td>합계</td>
+    </tr>
+    <tr>
+        <td>1학년</td>
+        <td>2학년</td>
+        <td>3학년</td>
+        <td>합계</td>
+        <td>1학년</td>
+        <td>2학년</td>
+        <td>3학년</td>
+        <td>합계</td>
+        <td>합계</td>
+    </tr>
+    <tr>
+        <td>1학년</td>
+        <td>2학년</td>
+        <td>3학년</td>
+        <td>합계</td>
+        <td>1학년</td>
+        <td>2학년</td>
+        <td>3학년</td>
+        <td>합계</td>
+        <td>합계</td>
+    </tr>
+    <tr>
+        <td>1학년</td>
+        <td>2학년</td>
+        <td>3학년</td>
+        <td>합계</td>
+        <td>1학년</td>
+        <td>2학년</td>
+        <td>3학년</td>
+        <td>합계</td>
+        <td>합계</td>
+    </tr>
+    <tr>
+        <td>1학년</td>
+        <td>2학년</td>
+        <td>3학년</td>
+        <td>합계</td>
+        <td>1학년</td>
+        <td>2학년</td>
+        <td>3학년</td>
+        <td>합계</td>
+        <td>합계</td>
+    </tr>
+    <caption>[표-1] 디미고학생현황</caption>
+</table>
+<hr>
+
+<fieldset>
+    <legend>회원가입</legend>
+    <form name="login" method="GET" action="login.php">
+        <table align="center" bgcolor="yellow">
+            <tr>
+                <td>아이디</td>
+                <td><input name="id" type="text" size="12" maxlength="12"/></td>
+            </tr>
+            <tr>
+                <td>패스워드</td>
+                <td><input name="pw" type="password" size="12" maxlength="20"/></td>
+            </tr>
+            <tr>
+                <td>성명</td>
+                <td><input name="pw" type="text" size="12" maxlength="20"/></td>
+            </tr>
+            <tr>
+                <td>이메일</td>
+                <td><input autocomplete="off" name="pw" type="email" size="12" maxlength="20"
+                           placeholder="me@email.com"/></td>
+            </tr>
+            <tr>
+                <td>성별</td>
+                <td>
+                    <input type="radio" name="sex" id="man" value="1"/>
+                    <label for="man">남</label>
+                    <input type="radio" name="sex" id="woman" value="2"/>
+                    <label for="woman">여</label>
+                </td>
+            </tr>
+            <tr>
+                <td>나이</td>
+                <td><input min="0" max="120" name="pw" type="number" size="12" maxlength="20" value="18"/></td>
+            </tr>
+            <tr>
+                <td>회원종류</td>
+                <td>
+                    <select name="grade">
+                        <optgroup label="교사">
+                            <option>담임</option>
+                            <option>비담임</option>
+                            <option>생활관</option>
+                        </optgroup>
+                        <optgroup label="학생">
+                            <option>1학년</option>
+                            <option>2학년</option>
+                            <option>3학년</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>선호과목</td>
+                <td>
+                    <input type="checkbox" name="kor"/>국어 <input type="checkbox" name="eng"/> 영어
+                    <input type="checkbox" name="mat"/> 수학 <input type="checkbox" name="soc"/> 사회
+                    <input type="checkbox" name="sci"/> 과학
+                </td>
+            </tr>
+            <tr>
+                <td>가입인사</td>
+                <td>
+<textarea name="memo" rows="10" cols="40">
+</textarea></td>
+            </tr>
+            <tr>
+                <td colspan="1" align="center">
+                    <input type="submit" value="가입신청"/>
+                </td>
+                <td colspan="1" align="center">
+                    <input type="submit" value="초기화"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+</fieldset>
+</body>
+</html>
