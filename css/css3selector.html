@@ -1,0 +1,26 @@
+<html>
+<style>
+    input[type=text] {
+        background: yellow
+    }
+</style>
+<style>
+    h1 + h2 {
+        color: red
+    }
+
+    h1 ~ h2 {
+        background: yellow;
+    }
+
+    h2:not([type="this"]) {
+        color: blue;
+    }
+</style>
+<body>
+<h1>Lorem insum 1</h1>
+<h2>Lorem insum 2</h2>
+<h2 id="this">Lorem insum 3</h2>
+<h2>Lorem insum 4</h2>
+</body>
+</html>
