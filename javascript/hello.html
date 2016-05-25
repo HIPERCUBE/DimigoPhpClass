@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>자바스크립트를 테스트 해 보아요</h1>
+<script lang="javascript">
+    alert("Hello");
+    document.write("Q: How are you?<br/>");
+    document.write("A: Fine <br/>");
+
+    var a;
+    alert(typeof(a));
+    a = "John";
+    alert(typeof(a));
+    a = 300;
+    alert(typeof(a));
+    a = true;
+    alert(typeof(a));
+    a = function () {
+        return 1;
+    };
+    alert(typeof(a));
+    a = [];
+    alert(typeof(a));
+
+    var fvar = function () {
+        alert("익명함수");
+    };
+    fvar();
+
+    var fadd = function (a, b) {
+        return a + b;
+    };
+    var c = fadd(2, 3);
+    alert(c);
+</script>
+</body>
+</html>
