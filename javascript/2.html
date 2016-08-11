@@ -1,0 +1,43 @@
+<html>
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <style type="text/css">
+
+        .outer {
+            width: 200px;
+            height: 200px;
+            background: orange;
+            padding: 50px;
+            margin: 10px;
+        }
+
+        .inner {
+            width: 100%;
+            height: 100%;
+            background: pink;
+        }
+
+        h3 {
+            display: inline-block;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="outer">
+    <div class="inner"></div>
+</div>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script language="JavaScript">
+    jQuery(document).ready(function () {
+        $('.outer').mouseover(function () {
+            $('<h3>mouseover</h3>').css('color', 'blue').appendTo('body');
+        }).mouseenter(function () {
+            $('<h3>mouseenter</h3>').css('color', 'red').appendTo('body');
+        });
+    });
+</script>
+</body>
+</html>
+ 

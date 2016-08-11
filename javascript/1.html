@@ -1,0 +1,108 @@
+<html lang="ko">
+<head>
+    <meta charset="utf-8"/>
+    <title>네비게이션 메뉴1</title>
+    <link rel="StyleSheet" href="menu1.css"/>
+    <style type="text/css">
+        body {
+            font-family: "맑은 고딕", sans-serif;
+            font-size: medium;
+        }
+
+        nav#menu {
+            height: 50px;;
+            background: #600;
+        }
+
+        ul.navi {
+            list-style-type: none;
+            padding: 0;
+            height: 40px;;
+        }
+
+        ul.navi li {
+            float: left;
+            background: #600;
+            line-height: 40px;
+            transition: all 0.3s linear;
+        }
+
+        ul.navi li a {
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+            padding: 5px 25px;
+            display: block;
+        }
+
+        ul.navi li a:hover {
+            color: #f90;
+        }
+
+        ul.navi li ul {
+            position: absolute;
+            list-style-type: none;
+            background: #daa;
+            widows: 180;
+            padding: 0;
+            opacity: 0;
+        }
+
+        ul.navi li:hover ul {
+            opacity: 1;
+        }
+
+        ul.navi li ul li {
+            float: none;
+            background: none;
+            height: 0;
+            line-height: 0;
+            padding: 0px;
+        }
+
+        ul.navi li:hover ul li {
+            height: 40px;
+            line-height: 30px;
+            padding: 5px 0;
+        }
+    </style>
+</head>
+<body>
+<nav id="menu">
+    <ul class="navi">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">웹 개발</a>
+            <ul>
+                <li><a href="#">웹 디자인</a></li>
+                <li><a href="#">HTML5 + CSS</a></li>
+                <li><a href="#">jQuery</a></li>
+                <li><a href="#">모바일 웹</a></li>
+            </ul>
+        </li>
+        <li><a href="#">게시판</a>
+            <ul>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">방명록</a></li>
+            </ul>
+        </li>
+        <li><a href="#">프로필</a></li>
+    </ul>
+</nav>
+<section>
+    <article>
+        <h3>제주 올레 7코스</h3>
+        <p>
+            외돌개를 출발하여 법환포구를 경유해 월평포구 까지 어어진 해안올레.
+            올레인들이 가장 아끼고
+            <mark>자연생태길</mark>
+            인
+            <mark>'수봉로'</mark>
+            를 만날 수 있다.
+            <mark>수봉로</mark>
+            는 세 번째 코스 개척 시기인 2007년 12월,
+            올레지기인 '김수봉'님이 염소가 다니던 길에 직접 삽과 곡괭이만으로 계단과 길을 만들어서 사람이 걸어다닐 수 있도록 한 길이다.
+        </p>
+    </article>
+</section>
+</body>
+</html>
